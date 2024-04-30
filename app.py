@@ -94,7 +94,6 @@ def main():
         user_input(user_question)
 
     with st.sidebar:
-        st.title("Menu:")
         pdf_docs = st.file_uploader("Upload your PDF Files and Click the Button", accept_multiple_files=True)
         if st.button("Let's Go"):
             with st.spinner("Processing..."):
