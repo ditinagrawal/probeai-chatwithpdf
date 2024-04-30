@@ -93,7 +93,7 @@ def main():
         user_input(user_question)
 
     with st.sidebar:
-        pdf_docs = st.file_uploader("Upload your PDF Files and Click the Button", accept_multiple_files=True)
+        pdf_docs = st.file_uploader("Upload your PDF Files and Click the Button", accept_multiple_files=False)
         if st.button("Let's Go"):
             with st.spinner("Processing..."):
                 raw_text = get_pdf_text(pdf_docs)
