@@ -87,13 +87,13 @@ def main():
     st.header("Probe AI 🚀")
     st.write("#### Let your PDF speak for you")
 
-    user_question = st.text_input("Ask a Question from the PDF Files")
+    user_question = st.text_input("Ask a Question from the PDF File")
 
     if user_question:
         user_input(user_question)
 
     with st.sidebar:
-        pdf_docs = st.file_uploader("Upload your PDF Files and Click the Button", accept_multiple_files=True)
+        pdf_docs = st.file_uploader("Upload your PDF File and Click the Go Button", accept_multiple_files=True)
         if st.button("Let's Go"):
             with st.spinner("Processing..."):
                 raw_text = get_pdf_text(pdf_docs)
