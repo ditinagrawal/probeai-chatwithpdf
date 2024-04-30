@@ -85,7 +85,8 @@ def user_input(user_question):
 
 def main():
     st.set_page_config("ProbeAI")
-    st.header("Chat with PDF")
+    st.header("Probe AI")
+    st.write("### Let your PDF speak for you")
 
     user_question = st.text_input("Ask a Question from the PDF Files")
 
