@@ -77,7 +77,7 @@ def user_input(user_question):
         , return_only_outputs=True)
 
     print(response)
-    st.write("Probe: ", response["output_text"])
+    st.write("Probe: \n", response["output_text"])
 
 
 
